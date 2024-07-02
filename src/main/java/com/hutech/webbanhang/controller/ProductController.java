@@ -131,4 +131,8 @@ public class ProductController {
     public String danggiao() {
         return "/products/danggiao";
     }
+    @GetMapping("/danhgia")
+    public String danhgia() {
+        return "/products/danhgia";
+    }
 }
