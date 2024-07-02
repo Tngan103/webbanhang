@@ -115,4 +115,9 @@ public class ProductController {
         productService.deleteProductById(id);
         return "redirect:/products";
     }
+
+    @GetMapping("/buy")
+    public String buy() {
+        return "/products/buy";
+    }
 }
