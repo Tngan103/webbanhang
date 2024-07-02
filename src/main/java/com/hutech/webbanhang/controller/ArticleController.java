@@ -25,25 +25,25 @@ public class ArticleController {
     @GetMapping("/detail/{id}")
     public String getArticleDetail(@PathVariable Long id, Model model) {
         model.addAttribute("article", articleService.getArticleById(id).orElseThrow(() -> new IllegalArgumentException("Invalid article Id:" + id)));
-        return "article-detail";
+        return "/article/article-detail";
     }
 
     @GetMapping("/add")
     public String showAddArticleForm(Model model) {
         model.addAttribute("article", new Article());
-        return "article-form";
+        return "/article/article-form";
     }
 
     @PostMapping("/add")
     public String addArticle(@ModelAttribute Article article) {
         articleService.addArticle(article);
-        return "redirect:/articles";
+        return "/article/articles";
     }
 
     @GetMapping("/edit/{id}")
     public String showEditArticleForm(@PathVariable Long id, Model model) {
         model.addAttribute("article", articleService.getArticleById(id).orElseThrow(() -> new IllegalArgumentException("Invalid article Id:" + id)));
-        return "article-form";
+        return "/article/article-form";
     }
 
     @PostMapping("/edit/{id}")

@@ -8,8 +8,8 @@
 <body>
 <section layout:fragment="content" class="container mt-5">
     <h1 th:text="${article.id == null} ? 'Add New Article' : 'Edit Article'">Add/Edit Article</h1>
-    <form th:action="@{${article.id == null} ? '/articles/add' : '/articles/edit/{id}(id=${article.id})'}" th:object="${article}" method="post">
-        <div class="mb-3">
+    <form th:action="@{${(article.id!= null)? '/articles/edit/' + article.id : '/articles/add'}}" th:object="${article}" method="post">
+    <div class="mb-3">
             <label for="title" class="form-label">Title:</label>
             <input type="text" th:field="*{title}" class="form-control" id="title" required>
         </div>
