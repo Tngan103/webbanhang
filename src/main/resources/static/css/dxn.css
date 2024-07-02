@@ -1,0 +1,54 @@
+body{
+    margin: 0px;
+}
+header{
+    width: 100%;
+    padding: 0px;
+}
+.containerHeader{
+    padding: 0px 10%;
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    width: 100%;
+}
+.containerHeader a{
+    display: inline-block;
+    color: antiquewhite;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+.containerHeader a:hover{
+    background-color: antiquewhite;
+    color: #333;
+    transition: 0.5s;
+}
+.container{
+    width: 90%;
+    margin:10px 5%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.sanpham{
+    min-width: 150px;
+    max-width: 400px;
+
+    display: inline-block;
+    background-color: #333;
+    padding: 10px;
+    font-size: 18px;
+    margin: 20px;
+}
+.tab p{
+    margin: 2px;
+}
+.gia{
+    display: flex;
+    justify-content: space-between;
+}
+.gia a{
+    color: aliceblue;
+    text-decoration: none;
+}

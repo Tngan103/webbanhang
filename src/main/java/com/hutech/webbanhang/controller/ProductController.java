@@ -119,5 +119,11 @@ public class ProductController {
     @GetMapping("/buy")
     public String buy() {
         return "/products/buy";
+
+    }
+
+    @GetMapping("/choxacnhan")
+    public String choxacnhan() {
+        return "/products/choxacnhan";
     }
 }
