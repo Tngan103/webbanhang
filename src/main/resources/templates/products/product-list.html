@@ -30,7 +30,7 @@
       <td th:text="${product.description}"></td>
       <td th:text="${product.category.name}"></td>
       <td>
-        <img th:src="@{'/images/' + ${product.image}}" alt="Product Image" class="img-thumbnail product-image">
+        <img th:src="@{'/uploads/' + ${product.image}}" alt="Product Image" class="img-thumbnail product-image" style="100" width="100">
       </td>
       <td>
         <!-- Hiển thị nút sửa và xóa chỉ dành cho người dùng ADMIN -->

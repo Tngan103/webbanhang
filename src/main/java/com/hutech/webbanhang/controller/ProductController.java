@@ -63,7 +63,7 @@ public class ProductController {
         if (!imageFile.isEmpty()) {
             try {
                 String fileName = imageFile.getOriginalFilename();
-                Path path = Paths.get(uploadPath + fileName);
+                Path path = Paths.get("src/main/resources/static/uploads/" + fileName);
                 Files.write(path, imageFile.getBytes());
                 product.setImage(fileName);
             } catch (IOException e) {
