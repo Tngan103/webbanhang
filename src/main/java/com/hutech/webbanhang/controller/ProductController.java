@@ -144,4 +144,8 @@ public class ProductController {
     public String lichsu() {
         return "/products/lichsu";
     }
+    @GetMapping("/sanpham")
+    public String sanpham() {
+        return "/products/sanpham";
+    }
 }

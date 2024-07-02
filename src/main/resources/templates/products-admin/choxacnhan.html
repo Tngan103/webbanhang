@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <title>buy</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" th:href="@{/css/admin-choXacNhan.css}">
+
+</head>
+<body>
+<section layout:fragment="content">
+    <header>
+    <div class="containerHeader">
+        <a href="sanPham.html">Sản Phẩm</a>
+        <a href="themsanpham.html">Thêm sản phẩm</a>
+        <a href="choXacNhan.html">Chờ Xác Nhận</a>
+        <a href="daXacNhan.html">Đã Xác Nhận</a>
+        <a href="LichSu.html">Lịch Sử</a>
+    </div>
+</header>
+    <div class="container">
+        <div class="sanpham">
+            <img src="public/image/99ceabc32f1a89576e1fcdf192ad5cfa.gif" alt="" width="100%">
+            <div class="tab">
+                <div class="contentsanpham">
+                    <p style="color: antiquewhite; ">cafe sữa</p>
+                    <p style="color: darkgrey;"> mô tả: khách hàng lựa chọn</p>
+                    <div class="gia">
+                        <p style="color: red;">20.000<u>đ</u></p>
+                        <button class="xacnhan">Xác Nhận</button>
+                        <button class="huy">Hủy Đơn</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>
