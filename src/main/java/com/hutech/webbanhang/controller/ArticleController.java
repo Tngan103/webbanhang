@@ -19,7 +19,7 @@ public class ArticleController {
     @GetMapping
     public String getAllArticles(Model model) {
         model.addAttribute("articles", articleService.getAllArticles());
-        return "articles";
+        return "/article/articles";
     }
 
     @GetMapping("/detail/{id}")
