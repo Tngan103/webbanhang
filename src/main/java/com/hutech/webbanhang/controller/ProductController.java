@@ -135,4 +135,13 @@ public class ProductController {
     public String danhgia() {
         return "/products/danhgia";
     }
+
+    @GetMapping("/daxacnhan")
+    public String daxacnhan() {
+        return "/products/daxacnhan";
+    }
+    @GetMapping("/lichsu")
+    public String lichsu() {
+        return "/products/lichsu";
+    }
 }
